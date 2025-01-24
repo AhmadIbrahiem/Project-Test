@@ -4,11 +4,8 @@ import NavBar from "./components/navbar/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import { Global, css } from "@emotion/react";
-import { useTheme } from "./assets/theme/ThemeContext";
 
 function App() {
-  const { isDarkMode } = useTheme();
-
   return (
     <>
       {/* Global styles for dynamic body background */}

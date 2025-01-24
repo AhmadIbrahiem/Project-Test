@@ -107,30 +107,6 @@ export const NavLink = styled(RouterNavLink)`
   }
 `;
 
-export const ThemeToggle = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  color: ${({ theme }) => theme.colors.secondary};
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition:
-    transform 0.2s,
-    color 0.3s ease;
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.hover};
-    transform: scale(1.2);
-  }
-
-  @media (max-width: 768px) {
-    align-self: flex-end;
-    margin-top: 1rem;
-  }
-`;
-
 export const Hamburger = styled.button`
   display: none;
   background: none;

@@ -4,14 +4,11 @@ import {
   Nav,
   Logo,
   NavLinksContainer,
-  ThemeToggle,
   Hamburger,
 } from "./Navbar.styled";
-import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
-import { useTheme } from "../../assets/theme/ThemeContext";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const NavBar = () => {
-  const { isDarkMode, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
