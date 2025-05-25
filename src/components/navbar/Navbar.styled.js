@@ -61,7 +61,9 @@ export const NavLinksContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    padding-left: 1rem; // added for alignment
     margin-top: 1rem;
+    gap: 1rem; // to space out the items
   }
 
   &.active {
@@ -115,10 +117,6 @@ export const Hamburger = styled.button`
   color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: rotate(90deg);
-  }
 
   @media (max-width: 768px) {
     display: block;

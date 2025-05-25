@@ -72,16 +72,18 @@ export const Greet = styled.p`
 
   @media (max-width: 480px) {
     font-size: 0.8rem;
+    line-height: 2rem
   }
 `;
 
 export const Title = styled.h1`
   font-size: 4rem;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.fontColor2};
+  color: ${({ theme }) => theme.colors.active};
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   animation: fadeInUp 1s ease both;
+  line-height: 4rem;
 
   @keyframes fadeInUp {
     from {
@@ -94,17 +96,11 @@ export const Title = styled.h1`
     }
   }
 
-  @media (max-width: 1024px) {
-    font-size: 3rem;
-  }
-
   @media (max-width: 768px) {
     font-size: 2.5rem;
+    line-height: 3rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 2rem;
-  }
 `;
 
 export const Description = styled.p`

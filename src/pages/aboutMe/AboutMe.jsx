@@ -4,9 +4,9 @@ import { Container, Title, Description, Button, Greet } from "./AboutMe.styled";
 const AboutMe = () => {
   return (
     <Container>
-      <Greet>Hi , My name is </Greet>
+      <Greet>Hi , it's Me </Greet>
       <Title>
-        Ahmad Ibrahiem <br />I am a web Developer.
+        Ahmad Ibrahiem, <br />A web Developer.
       </Title>
       <Description>
         A software engineer specializing in front-end development with expertise
